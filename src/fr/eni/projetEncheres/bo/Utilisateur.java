@@ -13,6 +13,7 @@ public class Utilisateur {
 	private String ville;
 	private String password;
 	private int credit;
+    private boolean admin;
 	public int getIdUser() {
 		return idUser;
 	}
