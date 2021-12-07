@@ -7,7 +7,7 @@ import java.time.LocalDate;
  */
 
 public class ArticleVendu {
-	// Atributs :
+	// Atributs : 
 	private int no_article;
     private String nom_article;
     private String description;
