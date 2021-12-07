@@ -19,6 +19,7 @@
     <body>
         <!-- En-tête de la page -->
         <header>
+<<<<<<< HEAD
             <img src="img/logo.svg" width="240" height="120" alt="">
             <nav id="Accueil">
                 <div id="Menu">
@@ -27,13 +28,47 @@
                 </div>
             </nav> 
         </header>
+=======
+        <div class="container-fluid d-flex justify-content-between shadow p-3 mb-5 bg-white rounded">
+>>>>>>> branch 'master' of https://github.com/Aladiel/projetEncheres.git
 
-      
-    
+            <div id="logo" class="pull-left">
+                <a href="#intro"><img src="img/logo.svg" alt="" title="" width="120px" /></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Connection.html">Se connecter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Inscription.html">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        </header>
+        
+        
+        <!-- Formulaire de Connexion -->
+			<form class="box" action="" method="post" name="login">
+				<h1 class="box-title">Connexion</h1>
+				<input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur">
+				<input type="password" class="box-input" name="password" placeholder="Mot de passe">
+				<input type="submit" value="Connexion " name="submit" class="box-button">
+				<p class="box-register">Vous êtes nouveau ici? <a href="Inscription.html">S'inscrire</a></p>
+				<?php if (! empty($message)) { ?>
+    				<p class="errorMessage"><?php echo $message; ?></p>
+				<?php } ?>
+			</form>
+		<!-- Fin de Formulaire de Connexion -->
+
     </body>
         <!-- Pied de page -->
         <footer>
+        	<div class="container-fluid d-flex justify-content-between shadow p-3 mb-5 bg-white rounded text-center">
             <p>© Copyright - Tous droits réservés</p>
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            </div>
         </footer>
 </html>
