@@ -1,8 +1,7 @@
 package fr.eni.projetEncheres.bo;
 
-
 public class Utilisateur {
-
+	// Attributs :
 	private int idUser;
 	private String pseudo;
 	private String nom;
@@ -15,6 +14,41 @@ public class Utilisateur {
 	private String password;
 	private int credit;
 	private boolean admin;
+	
+	// Constructeur : 
+	public Utilisateur() {
+	}
+		
+	public Utilisateur(int idUser, String pseudo, String nom, String prenom, String email, String rue, String cpo,
+			String ville, String password, int credit) {
+		this.idUser = idUser;
+		this.pseudo = pseudo;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.rue = rue;
+		this.cpo = cpo;
+		this.ville = ville;
+		this.password = password;
+		this.credit = credit;
+	}
+		
+	public Utilisateur(int idUser, String pseudo, String nom, String prenom, String email, String telephone, String rue,
+			String cpo, String ville, String password, int credit) {
+		this.idUser = idUser;
+		this.pseudo = pseudo;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.telephone = telephone;
+		this.rue = rue;
+		this.cpo = cpo;
+		this.ville = ville;
+		this.password = password;
+		this.credit = credit;
+	}
+	
+	// Getter / Setter :
 	public int getIdUser() {
 		return idUser;
 	}
@@ -81,40 +115,13 @@ public class Utilisateur {
 	public void setCredit(int credit) {
 		this.credit = credit;
 	}
-	
-	
-	public Utilisateur() {
-	}
-	
-	public Utilisateur(int idUser, String pseudo, String nom, String prenom, String email, String rue, String cpo,
-			String ville, String password, int credit) {
-		this.idUser = idUser;
-		this.pseudo = pseudo;
-		this.nom = nom;
-		this.prenom = prenom;
-		this.email = email;
-		this.rue = rue;
-		this.cpo = cpo;
-		this.ville = ville;
-		this.password = password;
-		this.credit = credit;
-	}
-	
-	public Utilisateur(int idUser, String pseudo, String nom, String prenom, String email, String telephone, String rue,
-			String cpo, String ville, String password, int credit) {
-		this.idUser = idUser;
-		this.pseudo = pseudo;
-		this.nom = nom;
-		this.prenom = prenom;
-		this.email = email;
-		this.telephone = telephone;
-		this.rue = rue;
-		this.cpo = cpo;
-		this.ville = ville;
-		this.password = password;
-		this.credit = credit;
-	}
-	
-	
-}
 
+	// Override toString :
+	@Override
+	public String toString() {
+		return "Utilisateur [idUser=" + idUser + ", pseudo=" + pseudo + ", nom=" + nom + ", prenom=" + prenom
+				+ ", email=" + email + ", telephone=" + telephone + ", rue=" + rue + ", cpo=" + cpo + ", ville=" + ville
+				+ ", password=" + password + ", credit=" + credit + ", admin=" + admin + "]";
+	}	
+
+}
