@@ -116,6 +116,14 @@ public class Utilisateur {
 		this.credit = credit;
 	}
 
+	public boolean isAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
+	}
+
 	// Override toString :
 	@Override
 	public String toString() {
