@@ -1,5 +1,6 @@
 package fr.eni.projetEncheres.bo;
 
+
 public class Utilisateur {
 
 	private int idUser;
@@ -116,3 +117,4 @@ public class Utilisateur {
 	
 	
 }
+

@@ -1,5 +1,5 @@
 package fr.eni.projetEncheres.bo;
 
-public class ArticleVendu {
+public class Categorie {
 
 }
